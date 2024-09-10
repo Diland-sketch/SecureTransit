@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" styleClass="leftBoard" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.secure.transitgui.RegistroController">
+   <children>
+      <AnchorPane layoutX="100.0" layoutY="70.0" prefHeight="650.0" prefWidth="1000.0" style="-fx-background-color: #212121;" styleClass="pane">
+         <children>
+            <Text fill="WHITE" layoutX="258.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REGISTRO DE CONDUCTOR">
+               <font>
+                  <Font name="Javanese Text" size="36.0" />
+               </font>
+            </Text>
+            <AnchorPane layoutX="260.0" layoutY="67.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="3.0" prefWidth="480.0" style="-fx-background-color: #76ff03;" />
+            <TextField fx:id="nomconductor" layoutX="245.0" layoutY="135.0" prefHeight="38.0" prefWidth="200.0" promptText="Nombre" style="-fx-background-color: trasnparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #76ff03;" styleClass="textField" stylesheets="@../../../../Css/background.css" />
+            <TextField fx:id="apeconductor" layoutX="240.0" layoutY="209.0" prefHeight="38.0" prefWidth="210.0" promptText="Apellido" style="-fx-background-color: trasnparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #76ff03;" styleClass="textField" stylesheets="@../../../../Css/background.css" />
+            <TextField fx:id="idconductor" layoutX="240.0" layoutY="291.0" prefHeight="38.0" prefWidth="210.0" promptText="Numero de Identificacion" style="-fx-background-color: trasnparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #76ff03;" styleClass="textField" stylesheets="@../../../../Css/background.css" />
+            <TextField fx:id="emailconductor" layoutX="241.0" layoutY="376.0" prefHeight="32.0" prefWidth="210.0" promptText="Email" style="-fx-background-color: trasnparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #76ff03;" styleClass="textField" stylesheets="@../../../../Css/background.css" />
+            <Button fx:id="btnregistrarconductor" layoutX="337.0" layoutY="514.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#clickBtnConductor" prefHeight="38.0" prefWidth="325.0" styleClass="btnLogin" text=" Registrar Conductor">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="20.0" />
+               </font>
+            </Button>
+            <HBox alignment="CENTER_LEFT" layoutX="258.0" layoutY="392.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <RadioButton mnemonicParsing="false" text="Masculino" textFill="WHITE">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="group" />
+                           </toggleGroup>
+                        </RadioButton>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <RadioButton mnemonicParsing="false" text="Femenino" textFill="WHITE" toggleGroup="$group" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <TextField fx:id="numplaca" layoutX="612.0" layoutY="141.0" prefHeight="32.0" prefWidth="210.0" promptText="Numero De Placa" style="-fx-background-color: trasnparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #76ff03;" styleClass="textField" stylesheets="@../../../../Css/background.css" />
+            <TextField fx:id="modelovehiculo" layoutX="612.0" layoutY="214.0" prefHeight="32.0" prefWidth="210.0" promptText="Modelo Del Vehiculo" style="-fx-background-color: trasnparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #76ff03;" styleClass="textField" stylesheets="@../../../../Css/background.css" />
+            <TextField fx:id="colorvehiculo" layoutX="612.0" layoutY="293.0" prefHeight="32.0" prefWidth="210.0" promptText="Color Del Vehiculo" style="-fx-background-color: trasnparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #76ff03;" styleClass="textField" stylesheets="@../../../../Css/background.css" />
+            <TextField fx:id="marcavehiculo" layoutX="612.0" layoutY="377.0" prefHeight="32.0" prefWidth="210.0" promptText="Marca Del Vehiculo" style="-fx-background-color: trasnparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #76ff03;" styleClass="textField" stylesheets="@../../../../Css/background.css" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="96.0" fitWidth="111.0" layoutX="-10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/logoST-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="23.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SECURE">
+         <font>
+            <Font name="Felix Titling" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="16.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TRANSIT">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnClose" layoutX="1151.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#close" prefHeight="32.0" prefWidth="47.0" styleClass="btnClose">
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/close.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+   <stylesheets>
+      <URL value="@../../../../Css/registro.css" />
+      <URL value="@../../../../Css/background.css" />
+   </stylesheets>
+</AnchorPane>
